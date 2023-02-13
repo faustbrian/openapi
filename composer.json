@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "justinrainbow/json-schema": "^5.2",
         "spatie/laravel-data": "^3.1",
         "symfony/yaml": "^6.2"
     },
