@@ -6,6 +6,7 @@ namespace PreemStudio\OpenApi\Data;
 
 use Illuminate\Support\Arr;
 use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Data\Actions\MapFlatArray;
 use PreemStudio\OpenApi\Data\Actions\MapProperty;
 use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
@@ -87,7 +88,7 @@ class Schema extends Data
             not: MapProperty::execute($reader, Arr::get($data, 'not'), Schema::class),
             items: MapProperty::execute($reader, Arr::get($data, 'items'), Schema::class),
             properties: MapArray::execute($reader, Arr::get($data, 'properties'), Schema::class),
-            additionalProperties: [], // MapArray::execute($reader, Arr::get($data, 'additionalProperties'), ['bool', Schema::class]),
+            additionalProperties: MapFlatArray::execute($reader, Arr::get($data, 'additionalProperties'), ['bool', Schema::class]),
             description: Arr::get($data, 'description'),
             format: Arr::get($data, 'format'),
             default: Arr::get($data, 'default'),
