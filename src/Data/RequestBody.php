@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use Illuminate\Support\Arr;
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -15,8 +18,17 @@ class RequestBody extends Data
         public ?string $description,
         /** @var string[] | MediaType[] */
         public array $content,
-        public ?bool $requierd,
+        public ?bool $required,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            description: Arr::get($data, 'description'),
+            content: MapArray::execute($reader, Arr::get($data, 'content'), ['string', MediaType::class]),
+            required: Arr::get($data, 'required'),
+        );
     }
 }

@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use Illuminate\Support\Arr;
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -21,5 +24,15 @@ class Response extends Data
         public ?array $links,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            description: Arr::get($data, 'description'),
+            headers: MapArray::execute($reader, Arr::get($data, 'headers'), ['string', Header::class]),
+            content: MapArray::execute($reader, Arr::get($data, 'content'), ['string', MediaType::class]),
+            links: MapArray::execute($reader, Arr::get($data, 'links'), ['string', Link::class]),
+        );
     }
 }

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -16,5 +18,12 @@ class Callback extends Data
         public array $items,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            items: MapArray::execute($reader, $data, PathItem::class),
+        );
     }
 }

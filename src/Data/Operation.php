@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use Illuminate\Support\Arr;
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Data\Actions\MapProperty;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -20,8 +24,8 @@ class Operation extends Data
         public ?string $operationId,
         /** @var Parameter[] | Reference[] */
         public ?array $parameters,
-        /** @var RequestBody[] | Reference[] */
-        public ?array $requestBody,
+        public RequestBody|Reference|null $requestBody,
+        /** @var Response[] | Reference[] */
         public ?array $responses,
         /** @var string[]|callable[]|Reference[] */
         public ?array $callbacks,
@@ -32,5 +36,23 @@ class Operation extends Data
         public ?array $servers,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            tags: Arr::get($data, 'tags'),
+            summary: Arr::get($data, 'summary'),
+            description: Arr::get($data, 'description'),
+            externalDocs: MapProperty::execute($reader, Arr::get($data, 'externalDocs'), ExternalDocumentation::class),
+            operationId: Arr::get($data, 'operationId'),
+            parameters: MapArray::execute($reader, Arr::get($data, 'parameters'), Parameter::class),
+            requestBody: MapProperty::execute($reader, Arr::get($data, 'requestBody'), RequestBody::class),
+            responses: MapArray::execute($reader, Arr::get($data, 'responses'), Response::class),
+            callbacks: MapArray::execute($reader, Arr::get($data, 'callbacks'), ['string', Callback::class]),
+            deprecated: Arr::get($data, 'deprecated'),
+            security: MapArray::execute($reader, Arr::get($data, 'security'), SecurityRequirement::class),
+            servers: MapArray::execute($reader, Arr::get($data, 'servers'), Server::class),
+        );
     }
 }

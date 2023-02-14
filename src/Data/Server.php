@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use Illuminate\Support\Arr;
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -18,5 +21,14 @@ class Server extends Data
         public ?array $variables,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            url: Arr::get($data, 'url'),
+            description: Arr::get($data, 'description'),
+            variables: MapArray::execute($reader, Arr::get($data, 'variables'), ServerVariable::class),
+        );
     }
 }

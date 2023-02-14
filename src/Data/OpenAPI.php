@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use PreemStudio\OpenApi\Data\Actions\MapArray;
 use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
@@ -37,12 +38,12 @@ class OpenAPI extends Data
             openapi: $reader->get('openapi'),
             info: Info::from($reader->get('info')),
             jsonSchemaDialect: $reader->get('jsonSchemaDialect'),
-            servers: $reader->get('servers'),
-            paths: Paths::fromArray($reader->get('paths')),
-            webhooks: $reader->get('webhooks'),
+            servers: MapArray::execute($reader, $reader->get('servers'), Server::class),
+            paths: Paths::fromReader($reader, $reader->get('paths')),
+            webhooks: MapArray::execute($reader, $reader->get('webhooks'), ['string', PathItem::class]),
             components: Components::from($reader->get('components')),
-            security: $reader->get('security'),
-            tags: $reader->get('tags'),
+            security: MapArray::execute($reader, $reader->get('security'), SecurityRequirement::class),
+            tags: MapArray::execute($reader, $reader->get('tags'), Tag::class),
             externalDocs: ExternalDocumentation::from($reader->get('externalDocs')),
         );
     }

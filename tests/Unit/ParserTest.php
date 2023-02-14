@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Tests\Unit;
+
 use PreemStudio\OpenApi\Data\Components;
 use PreemStudio\OpenApi\Data\Contact;
 use PreemStudio\OpenApi\Data\ExternalDocumentation;
@@ -13,11 +15,11 @@ use PreemStudio\OpenApi\Data\Paths;
 use PreemStudio\OpenApi\Parser;
 use PreemStudio\OpenApi\Reader;
 
-it('can create an instance with a reader', function () {
+it('can create an instance with a reader', function (): void {
     expect(new Parser(Reader::fromJsonFile('tests/Fixtures/api.github.com.json')))->toBeInstanceOf(Parser::class);
 });
 
-it('can parse an OpenAPI document into a DTO', function () {
+it('can parse an OpenAPI document into a DTO', function (): void {
     $data = (new Parser(Reader::fromJsonFile('tests/Fixtures/api.github.com.json')))->parse();
 
     expect($data)->toBeInstanceOf(OpenAPI::class);

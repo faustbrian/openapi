@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -18,8 +20,10 @@ class Paths extends Data
         //
     }
 
-    public static function fromArray(array $items): self
+    public static function fromReader(Reader $reader, array $data): self
     {
-        return new self(array_map(fn ($item) => PathItem::from($item), $items));
+        return new self(
+            items: MapArray::execute($reader, $data, PathItem::class),
+        );
     }
 }

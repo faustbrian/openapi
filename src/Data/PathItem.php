@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use Illuminate\Support\Arr;
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Data\Actions\MapProperty;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -29,5 +33,24 @@ class PathItem extends Data
         public ?array $parameters,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            ref: Arr::get($data, 'ref'),
+            summary: Arr::get($data, 'summary'),
+            description: Arr::get($data, 'description'),
+            get: MapProperty::execute($reader, Arr::get($data, 'get'), Operation::class),
+            put: MapProperty::execute($reader, Arr::get($data, 'put'), Operation::class),
+            post: MapProperty::execute($reader, Arr::get($data, 'post'), Operation::class),
+            delete: MapProperty::execute($reader, Arr::get($data, 'delete'), Operation::class),
+            options: MapProperty::execute($reader, Arr::get($data, 'options'), Operation::class),
+            head: MapProperty::execute($reader, Arr::get($data, 'head'), Operation::class),
+            patch: MapProperty::execute($reader, Arr::get($data, 'patch'), Operation::class),
+            trace: MapProperty::execute($reader, Arr::get($data, 'trace'), Operation::class),
+            servers: MapArray::execute($reader, Arr::get($data, 'servers'), Server::class),
+            parameters: MapArray::execute($reader, Arr::get($data, 'parameters'), Parameter::class),
+        );
     }
 }

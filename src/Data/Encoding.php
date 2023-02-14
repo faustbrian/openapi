@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data;
 
+use Illuminate\Support\Arr;
+use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
 /**
@@ -20,5 +23,16 @@ class Encoding extends Data
         public ?bool $allowReserved,
     ) {
         //
+    }
+
+    public static function fromReader(Reader $reader, array $data): self
+    {
+        return new self(
+            contentType: Arr::get($data, 'contentType'),
+            headers: MapArray::execute($reader, Arr::get($data, 'headers'), ['string', MediaType::class]),
+            style: Arr::get($data, 'style'),
+            explode: Arr::get($data, 'explode'),
+            allowReserved: Arr::get($data, 'allowReserved'),
+        );
     }
 }

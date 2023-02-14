@@ -12,9 +12,8 @@ use Spatie\LaravelData\Data;
 class Header extends Data
 {
     public function __construct(
-        public string $name,
-        public ?string $description,
-        public ?ExternalDocumentation $externalDocs,
+        public string $example,
+        public ?Schema $schema,
     ) {
         //
     }
