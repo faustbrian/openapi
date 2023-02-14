@@ -6,6 +6,7 @@ namespace PreemStudio\OpenApi\Data;
 
 use Illuminate\Support\Arr;
 use PreemStudio\OpenApi\Data\Actions\MapArray;
+use PreemStudio\OpenApi\Data\Actions\MapProperty;
 use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
@@ -39,14 +40,12 @@ class Schema extends Data
         public ?array $oneOf,
         /** @var Schema[] | Reference[] */
         public ?array $anyOf,
-        // FIXME: unionWithData
-        // public Schema|Reference|null $not,
-        // FIXME: unionWithData
-        // public Schema|Reference|null $items,
+        public ?Schema $not,
+        public ?Schema $items,
         /** @var Schema[] | Reference[] */
         public ?array $properties,
-        // FIXME: unionWithData
-        // public Schema|Reference|bool|null $additionalProperties,
+        /** @var Schema | Reference | bool */
+        public mixed $additionalProperties,
         public ?string $description,
         public ?string $format,
         public mixed $default,
@@ -85,10 +84,10 @@ class Schema extends Data
             allOf: MapArray::execute($reader, Arr::get($data, 'allOf'), Schema::class),
             oneOf: MapArray::execute($reader, Arr::get($data, 'oneOf'), Schema::class),
             anyOf: MapArray::execute($reader, Arr::get($data, 'anyOf'), Schema::class),
-            // not: Arr::get($data, 'not'),
-            // items: Arr::get($data, 'items'),
+            not: MapProperty::execute($reader, Arr::get($data, 'not'), Schema::class),
+            items: MapProperty::execute($reader, Arr::get($data, 'items'), Schema::class),
             properties: MapArray::execute($reader, Arr::get($data, 'properties'), Schema::class),
-            // additionalProperties: Arr::get($data, 'additionalProperties'),
+            additionalProperties: [], // MapArray::execute($reader, Arr::get($data, 'additionalProperties'), ['bool', Schema::class]),
             description: Arr::get($data, 'description'),
             format: Arr::get($data, 'format'),
             default: Arr::get($data, 'default'),

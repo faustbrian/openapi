@@ -15,6 +15,10 @@ class MapArray
         }
 
         return array_map(function ($item) use ($reader, $class) {
+            if (is_bool($item) && is_array($class) && in_array('bool', $class)) {
+                return $item;
+            }
+
             if (is_string($item) && is_array($class) && in_array('string', $class)) {
                 return $item;
             }
