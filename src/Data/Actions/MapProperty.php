@@ -7,7 +7,7 @@ namespace PreemStudio\OpenApi\Data\Actions;
 use PreemStudio\OpenApi\Reader;
 use Spatie\LaravelData\Data;
 
-class MapProperty
+final class MapProperty
 {
     public static function execute(Reader $reader, ?array $property, string $class): ?Data
     {

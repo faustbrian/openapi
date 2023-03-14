@@ -13,7 +13,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#media-type-object
  */
-class MediaType extends Data
+final class MediaType extends Data
 {
     public function __construct(
         public ?Schema $schema,

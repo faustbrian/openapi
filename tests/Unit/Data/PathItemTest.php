@@ -14,7 +14,7 @@ use PreemStudio\OpenApi\Reader;
 
 it('can create an instance with mapped properties', function (): void {
     $reader = Reader::fromJsonFile('tests/Fixtures/api.github.com.json');
-    $data = PathItem::fromReader($reader, $reader->get('paths./'));
+    $data   = PathItem::fromReader($reader, $reader->get('paths./'));
 
     expect($data)->toBeInstanceOf(PathItem::class);
     expect($data->get)->toBeInstanceOf(Operation::class);

@@ -6,7 +6,7 @@ namespace PreemStudio\OpenApi\Data\Actions;
 
 use PreemStudio\OpenApi\Reader;
 
-class MapArray
+final class MapArray
 {
     public static function execute(Reader $reader, ?array $items, array|string $class): ?array
     {

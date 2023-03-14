@@ -11,7 +11,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#paths-object
  */
-class Paths extends Data
+final class Paths extends Data
 {
     public function __construct(
         /** @var PathItem[] | Reference[] */

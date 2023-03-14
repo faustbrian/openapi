@@ -6,7 +6,7 @@ namespace PreemStudio\OpenApi;
 
 use PreemStudio\OpenApi\Data\OpenAPI;
 
-class Parser
+final class Parser
 {
     public function __construct(private Reader $reader)
     {

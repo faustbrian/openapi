@@ -12,7 +12,7 @@ use PreemStudio\OpenApi\Reader;
 
 it('can create an instance with mapped properties', function (): void {
     $reader = Reader::fromJsonFile('tests/Fixtures/api.github.com.json');
-    $data = Response::fromReader($reader, $reader->get('paths./.get.responses.200'));
+    $data   = Response::fromReader($reader, $reader->get('paths./.get.responses.200'));
 
     expect($data)->toBeInstanceOf(Response::class);
     expect($data->content)->toBeArray();

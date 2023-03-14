@@ -11,7 +11,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#callback-object
  */
-class Callback extends Data
+final class Callback extends Data
 {
     public function __construct(
         /** @var PathItem[] | Reference[] */

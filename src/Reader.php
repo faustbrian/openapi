@@ -7,7 +7,7 @@ namespace PreemStudio\OpenApi;
 use Illuminate\Support\Arr;
 use Symfony\Component\Yaml\Yaml;
 
-class Reader
+final class Reader
 {
     private function __construct(private array $contents)
     {

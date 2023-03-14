@@ -9,7 +9,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#info-object
  */
-class Info extends Data
+final class Info extends Data
 {
     public function __construct(
         public string $title,

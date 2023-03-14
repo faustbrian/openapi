@@ -11,7 +11,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#openapi-object
  */
-class OpenAPI extends Data
+final class OpenAPI extends Data
 {
     public function __construct(
         public string $openapi,

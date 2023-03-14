@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
 /**
  * https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#encoding-object
  */
-class Encoding extends Data
+final class Encoding extends Data
 {
     public function __construct(
         public ?string $contentType,

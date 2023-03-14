@@ -9,7 +9,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#oauth-flow-object
  */
-class OAuthFlow extends Data
+final class OAuthFlow extends Data
 {
     public function __construct(
         public string $authorizationUrl,

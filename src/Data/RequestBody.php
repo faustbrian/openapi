@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#request-body-object
  */
-class RequestBody extends Data
+final class RequestBody extends Data
 {
     public function __construct(
         public ?string $description,

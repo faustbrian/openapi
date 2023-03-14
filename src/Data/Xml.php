@@ -9,7 +9,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#xml-object
  */
-class Xml extends Data
+final class Xml extends Data
 {
     public function __construct(
         public ?string $name,

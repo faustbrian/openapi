@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace PreemStudio\OpenApi\Data\Actions;
 
-class NormalizeReferenceIdentifier
+final class NormalizeReferenceIdentifier
 {
     public static function execute(string $identifier): string
     {

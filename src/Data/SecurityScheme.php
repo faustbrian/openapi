@@ -9,7 +9,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#security-scheme-object
  */
-class SecurityScheme extends Data
+final class SecurityScheme extends Data
 {
     public function __construct(
         public string $type,

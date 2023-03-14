@@ -18,18 +18,20 @@
     "require": {
         "php": "^8.2",
         "justinrainbow/json-schema": "^5.2",
+        "preemstudio/laravel-jetpack": "^1.2",
         "spatie/laravel-data": "^3.1",
         "symfony/yaml": "^6.2"
     },
     "require-dev": {
         "ergebnis/composer-normalize": "^2.30",
+        "laravel/fortify": "^1.16",
         "laravel/pint": "^1.6",
         "mockery/mockery": "^1.5",
-        "nunomaduro/collision": "^7.1",
+        "nunomaduro/collision": "^6.4",
         "nunomaduro/larastan": "^2.5",
         "orchestra/testbench": "^8.0",
-        "pestphp/pest": "2.x-dev",
-        "pestphp/pest-plugin-laravel": "2.x-dev",
+        "pestphp/pest": "^1.22",
+        "pestphp/pest-plugin-laravel": "^1.4",
         "phpstan/extension-installer": "^1.2",
         "phpstan/phpstan-deprecation-rules": "^1.1",
         "phpstan/phpstan-phpunit": "^1.3",

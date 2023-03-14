@@ -6,7 +6,7 @@ namespace PreemStudio\OpenApi;
 
 use JsonSchema\Validator as JsonSchema;
 
-class Validator
+final class Validator
 {
     private JsonSchema $validator;
 

@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
+use PreemStudio\Jetpack\TestBench\AbstractTestCase;
 use Spatie\LaravelData\LaravelDataServiceProvider;
 
-class TestCase extends Orchestra
+abstract class TestCase extends AbstractTestCase
 {
     protected function getPackageProviders($app)
     {

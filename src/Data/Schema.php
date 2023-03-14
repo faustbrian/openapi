@@ -14,7 +14,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#schema-object
  */
-class Schema extends Data
+final class Schema extends Data
 {
     public function __construct(
         public ?string $title,

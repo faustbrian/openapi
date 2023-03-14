@@ -12,7 +12,7 @@ use Spatie\LaravelData\Data;
 /**
  * @see https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.0.md#components-object
  */
-class Components extends Data
+final class Components extends Data
 {
     public function __construct(
         /** @var string[] | Schema[] */
