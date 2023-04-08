@@ -1,0 +1,441 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#2 \\$property of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Actions/MapFlatArray.php
+
+		-
+			message: "#^Parameter \\$items of class PreemStudio\\\\OpenApi\\\\Data\\\\Callback constructor expects array\\<PreemStudio\\\\OpenApi\\\\Data\\\\PathItem\\|PreemStudio\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Callback.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 10
+			path: src/Data/Components.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$allowReserved of class PreemStudio\\\\OpenApi\\\\Data\\\\Encoding constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$contentType of class PreemStudio\\\\OpenApi\\\\Data\\\\Encoding constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$explode of class PreemStudio\\\\OpenApi\\\\Data\\\\Encoding constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$style of class PreemStudio\\\\OpenApi\\\\Data\\\\Encoding constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$operationId of class PreemStudio\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$operationRef of class PreemStudio\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$requestBody of class PreemStudio\\\\OpenApi\\\\Data\\\\Link constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\RequestBody\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$server of class PreemStudio\\\\OpenApi\\\\Data\\\\Link constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Server\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\$schema of class PreemStudio\\\\OpenApi\\\\Data\\\\MediaType constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method PreemStudio\\\\OpenApi\\\\Data\\\\Paths\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 4
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\$jsonSchemaDialect of class PreemStudio\\\\OpenApi\\\\Data\\\\OpenAPI constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\$openapi of class PreemStudio\\\\OpenApi\\\\Data\\\\OpenAPI constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 5
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$deprecated of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$externalDocs of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\ExternalDocumentation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$operationId of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$requestBody of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Reference\\|PreemStudio\\\\OpenApi\\\\Data\\\\RequestBody\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$summary of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$tags of class PreemStudio\\\\OpenApi\\\\Data\\\\Operation constructor expects array\\<string\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 8
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$delete of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$get of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$head of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$options of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$patch of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$post of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$put of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$ref of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$summary of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$trace of class PreemStudio\\\\OpenApi\\\\Data\\\\PathItem constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$items of class PreemStudio\\\\OpenApi\\\\Data\\\\Paths constructor expects array\\<PreemStudio\\\\OpenApi\\\\Data\\\\PathItem\\|PreemStudio\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Paths.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$content of class PreemStudio\\\\OpenApi\\\\Data\\\\RequestBody constructor expects array\\<PreemStudio\\\\OpenApi\\\\Data\\\\MediaType\\|string\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\RequestBody constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$required of class PreemStudio\\\\OpenApi\\\\Data\\\\RequestBody constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 3
+			path: src/Data/Response.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\Response constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/Response.php
+
+		-
+			message: "#^Parameter \\$items of class PreemStudio\\\\OpenApi\\\\Data\\\\Responses constructor expects array\\<PreemStudio\\\\OpenApi\\\\Data\\\\Reference\\|PreemStudio\\\\OpenApi\\\\Data\\\\Response\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Responses.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 7
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$additionalProperties of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|PreemStudio\\\\OpenApi\\\\Data\\\\Reference\\|PreemStudio\\\\OpenApi\\\\Data\\\\Schema, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$deprecated of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$discriminator of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Discriminator\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$enum of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$exclusiveMaximum of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$exclusiveMinimum of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$externalDocs of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\ExternalDocumentation\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$format of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$items of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxItems of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxLength of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxProperties of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maximum of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minItems of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minLength of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minProperties of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minimum of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$multipleOf of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$not of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$nullable of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$pattern of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$readOnly of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$required of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\<string\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$title of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$type of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$uniqueItems of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$writeOnly of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$xml of class PreemStudio\\\\OpenApi\\\\Data\\\\Schema constructor expects PreemStudio\\\\OpenApi\\\\Data\\\\Xml\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method PreemStudio\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\$description of class PreemStudio\\\\OpenApi\\\\Data\\\\Server constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\$url of class PreemStudio\\\\OpenApi\\\\Data\\\\Server constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of class PreemStudio\\\\OpenApi\\\\Reader constructor expects array, mixed given\\.$#"
+			count: 3
+			path: src/Reader.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method PreemStudio\\\\OpenApi\\\\Reader\\:\\:fromJson\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Reader.php
