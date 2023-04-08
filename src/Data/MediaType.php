@@ -18,9 +18,9 @@ final class MediaType extends Data
     public function __construct(
         public ?Schema $schema,
         public mixed $example,
-        /** @var string[] | Example[] | Reference[] */
+        /** @var Example[]|Reference[]|string[] */
         public ?array $examples,
-        /** @var string[] | Encoding[] */
+        /** @var Encoding[]|string[] */
         public ?array $encoding,
     ) {
         //

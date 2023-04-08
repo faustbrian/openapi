@@ -14,16 +14,16 @@ final class MapArray
             return null;
         }
 
-        return array_map(function ($item) use ($reader, $class) {
-            if (is_bool($item) && is_array($class) && in_array('bool', $class)) {
+        return \array_map(function ($item) use ($reader, $class) {
+            if (\is_bool($item) && \is_array($class) && \in_array('bool', $class, true)) {
                 return $item;
             }
 
-            if (is_string($item) && is_array($class) && in_array('string', $class)) {
+            if (\is_string($item) && \is_array($class) && \in_array('string', $class, true)) {
                 return $item;
             }
 
-            return MapProperty::execute($reader, $item, is_array($class) ? $class[1] : $class);
+            return MapProperty::execute($reader, $item, \is_array($class) ? $class[1] : $class);
         }, $items);
     }
 }

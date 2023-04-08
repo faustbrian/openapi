@@ -16,11 +16,11 @@ final class Response extends Data
 {
     public function __construct(
         public string $description,
-        /** @var string[] | Header[] | Reference[] */
+        /** @var Header[]|Reference[]|string[] */
         public ?array $headers,
-        /** @var string[] | MediaType[] | Reference[] */
+        /** @var MediaType[]|Reference[]|string[] */
         public ?array $content,
-        /** @var string[] | Link[] | Reference[] */
+        /** @var Link[]|Reference[]|string[] */
         public ?array $links,
     ) {
         //

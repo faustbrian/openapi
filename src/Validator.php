@@ -14,8 +14,8 @@ final class Validator
     {
         $data = $this->reader->all();
 
-        $this->validator = new JsonSchema;
-        $this->validator->validate($data, file_get_contents('schemas/v3.1/schema.json'));
+        $this->validator = new JsonSchema();
+        $this->validator->validate($data, \file_get_contents('schemas/v3.1/schema.json'));
     }
 
     public function passes(): bool
@@ -25,7 +25,7 @@ final class Validator
 
     public function fails(): bool
     {
-        return ! $this->passes();
+        return !$this->passes();
     }
 
     public function errors(): array

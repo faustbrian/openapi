@@ -22,12 +22,12 @@ final class Operation extends Data
         public ?string $description,
         public ?ExternalDocumentation $externalDocs,
         public ?string $operationId,
-        /** @var Parameter[] | Reference[] */
+        /** @var Parameter[]|Reference[] */
         public ?array $parameters,
         public RequestBody|Reference|null $requestBody,
-        /** @var Response[] | Reference[] */
+        /** @var Reference[]|Response[] */
         public ?array $responses,
-        /** @var string[]|callable[]|Reference[] */
+        /** @var callable[]|Reference[]|string[] */
         public ?array $callbacks,
         public ?bool $deprecated,
         /** @var SecurityRequirement[] */

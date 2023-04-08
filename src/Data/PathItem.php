@@ -29,7 +29,7 @@ final class PathItem extends Data
         public ?Operation $trace,
         /** @var Server[] */
         public ?array $servers,
-        /** @var Parameter[] | Reference[] */
+        /** @var Parameter[]|Reference[] */
         public ?array $parameters,
     ) {
         //

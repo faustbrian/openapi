@@ -35,17 +35,17 @@ final class Schema extends Data
         public ?array $required,
         public ?array $enum,
         public array|string|null $type,
-        /** @var Schema[] | Reference[] */
+        /** @var Reference[]|Schema[] */
         public ?array $allOf,
-        /** @var Schema[] | Reference[] */
+        /** @var Reference[]|Schema[] */
         public ?array $oneOf,
-        /** @var Schema[] | Reference[] */
+        /** @var Reference[]|Schema[] */
         public ?array $anyOf,
-        public ?Schema $not,
-        public ?Schema $items,
-        /** @var Schema[] | Reference[] */
+        public ?self $not,
+        public ?self $items,
+        /** @var Reference[]|Schema[] */
         public ?array $properties,
-        /** @var Schema | Reference | bool */
+        /** @var bool|Reference|Schema */
         public mixed $additionalProperties,
         public ?string $description,
         public ?string $format,
@@ -82,13 +82,13 @@ final class Schema extends Data
             required: Arr::get($data, 'required'),
             enum: Arr::get($data, 'enum'),
             type: Arr::get($data, 'type'),
-            allOf: MapArray::execute($reader, Arr::get($data, 'allOf'), Schema::class),
-            oneOf: MapArray::execute($reader, Arr::get($data, 'oneOf'), Schema::class),
-            anyOf: MapArray::execute($reader, Arr::get($data, 'anyOf'), Schema::class),
-            not: MapProperty::execute($reader, Arr::get($data, 'not'), Schema::class),
-            items: MapProperty::execute($reader, Arr::get($data, 'items'), Schema::class),
-            properties: MapArray::execute($reader, Arr::get($data, 'properties'), Schema::class),
-            additionalProperties: MapFlatArray::execute($reader, Arr::get($data, 'additionalProperties'), ['bool', Schema::class]),
+            allOf: MapArray::execute($reader, Arr::get($data, 'allOf'), self::class),
+            oneOf: MapArray::execute($reader, Arr::get($data, 'oneOf'), self::class),
+            anyOf: MapArray::execute($reader, Arr::get($data, 'anyOf'), self::class),
+            not: MapProperty::execute($reader, Arr::get($data, 'not'), self::class),
+            items: MapProperty::execute($reader, Arr::get($data, 'items'), self::class),
+            properties: MapArray::execute($reader, Arr::get($data, 'properties'), self::class),
+            additionalProperties: MapFlatArray::execute($reader, Arr::get($data, 'additionalProperties'), ['bool', self::class]),
             description: Arr::get($data, 'description'),
             format: Arr::get($data, 'format'),
             default: Arr::get($data, 'default'),

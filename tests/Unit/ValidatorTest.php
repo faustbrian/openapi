@@ -8,7 +8,7 @@ use PreemStudio\OpenApi\Reader;
 use PreemStudio\OpenApi\Validator;
 
 it('can validate a JSON string', function (): void {
-    $validator = new Validator(Reader::fromJson(file_get_contents('tests/Fixtures/api.github.com.json')));
+    $validator = new Validator(Reader::fromJson(\file_get_contents('tests/Fixtures/api.github.com.json')));
 
     expect($validator->passes())->toBeTrue();
     expect($validator->fails())->toBeFalse();
@@ -24,7 +24,7 @@ it('can validate a JSON file', function (): void {
 });
 
 it('can validate a YAML string', function (): void {
-    $validator = new Validator(Reader::fromYaml(file_get_contents('tests/Fixtures/api.github.com.yaml')));
+    $validator = new Validator(Reader::fromYaml(\file_get_contents('tests/Fixtures/api.github.com.yaml')));
 
     expect($validator->passes())->toBeTrue();
     expect($validator->fails())->toBeFalse();

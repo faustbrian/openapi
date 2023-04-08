@@ -14,7 +14,7 @@ use Spatie\LaravelData\Data;
 final class Responses extends Data
 {
     public function __construct(
-        /** @var Response[] | Reference[] */
+        /** @var Reference[]|Response[] */
         public array $items,
     ) {
         //

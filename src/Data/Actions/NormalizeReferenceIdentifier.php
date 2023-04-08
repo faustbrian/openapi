@@ -8,6 +8,6 @@ final class NormalizeReferenceIdentifier
 {
     public static function execute(string $identifier): string
     {
-        return str_replace('/', '.', substr($identifier, 2));
+        return \str_replace('/', '.', \mb_substr($identifier, 2));
     }
 }

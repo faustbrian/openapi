@@ -16,7 +16,7 @@ final class RequestBody extends Data
 {
     public function __construct(
         public ?string $description,
-        /** @var string[] | MediaType[] */
+        /** @var MediaType[]|string[] */
         public array $content,
         public ?bool $required,
     ) {

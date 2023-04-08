@@ -15,11 +15,11 @@ final class MapProperty
             return null;
         }
 
-        if (array_key_exists('$ref', $property)) {
+        if (\array_key_exists('$ref', $property)) {
             $property = $reader->get(NormalizeReferenceIdentifier::execute($property['$ref']));
         }
 
-        if (method_exists($class, 'fromReader')) {
+        if (\method_exists($class, 'fromReader')) {
             return $class::fromReader($reader, $property);
         }
 

@@ -16,12 +16,12 @@ final class Reader
 
     public static function fromJson(string $contents): self
     {
-        return new self(json_decode($contents, true, 512, JSON_THROW_ON_ERROR));
+        return new self(\json_decode($contents, true, 512, \JSON_THROW_ON_ERROR));
     }
 
     public static function fromJsonFile(string $path): self
     {
-        return self::fromJson(file_get_contents($path));
+        return self::fromJson(\file_get_contents($path));
     }
 
     public static function fromYaml(string $contents): self

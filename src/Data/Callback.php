@@ -14,7 +14,7 @@ use Spatie\LaravelData\Data;
 final class Callback extends Data
 {
     public function __construct(
-        /** @var PathItem[] | Reference[] */
+        /** @var PathItem[]|Reference[] */
         public array $items,
     ) {
         //

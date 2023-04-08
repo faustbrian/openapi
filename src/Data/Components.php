@@ -15,25 +15,25 @@ use Spatie\LaravelData\Data;
 final class Components extends Data
 {
     public function __construct(
-        /** @var string[] | Schema[] */
+        /** @var Schema[]|string[] */
         public ?array $schemas,
-        /** @var string[] | Response[] | Reference[] */
+        /** @var Reference[]|Response[]|string[] */
         public ?array $responses,
-        /** @var string[] | Parameter[] | Reference[] */
+        /** @var Parameter[]|Reference[]|string[] */
         public ?array $parameters,
-        /** @var string[] | Example[] | Reference[] */
+        /** @var Example[]|Reference[]|string[] */
         public ?array $examples,
-        /** @var string[] | RequestBody[] | Reference[] */
+        /** @var Reference[]|RequestBody[]|string[] */
         public ?array $requestBodies,
-        /** @var string[] | Header[] | Reference[] */
+        /** @var Header[]|Reference[]|string[] */
         public ?array $headers,
-        /** @var string[] | SecurityScheme[] | Reference[] */
+        /** @var Reference[]|SecurityScheme[]|string[] */
         public ?array $securitySchemes,
-        /** @var string[] | Link[] | Reference[] */
+        /** @var Link[]|Reference[]|string[] */
         public ?array $links,
-        /** @var string[]|callable[]|Reference[] */
+        /** @var callable[]|Reference[]|string[] */
         public ?array $callbacks,
-        /** @var string[] | PathItem[] | Reference[] */
+        /** @var PathItem[]|Reference[]|string[] */
         public ?array $pathItems,
     ) {
         //

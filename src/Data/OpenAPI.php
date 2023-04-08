@@ -20,7 +20,7 @@ final class OpenAPI extends Data
         /** @var Server[] */
         public ?array $servers,
         public ?Paths $paths,
-        /** @var string[] | PathItem[] | Reference[] */
+        /** @var PathItem[]|Reference[]|string[] */
         public ?array $webhooks,
         public Components $components,
         /** @var SecurityRequirement[] */

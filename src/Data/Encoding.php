@@ -16,7 +16,7 @@ final class Encoding extends Data
 {
     public function __construct(
         public ?string $contentType,
-        /** @var string[] | Header[] | Reference[] */
+        /** @var Header[]|Reference[]|string[] */
         public ?array $headers,
         public ?string $style,
         public ?bool $explode,

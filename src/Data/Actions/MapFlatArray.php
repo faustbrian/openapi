@@ -14,10 +14,10 @@ final class MapFlatArray
             return null;
         }
 
-        if (is_bool($items) && is_array($class) && in_array('bool', $class)) {
+        if (\is_bool($items) && \is_array($class) && \in_array('bool', $class, true)) {
             return $items;
         }
 
-        return MapProperty::execute($reader, $items, is_array($class) ? $class[1] : $class);
+        return MapProperty::execute($reader, $items, \is_array($class) ? $class[1] : $class);
     }
 }

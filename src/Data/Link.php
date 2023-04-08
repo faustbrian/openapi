@@ -18,7 +18,7 @@ final class Link extends Data
     public function __construct(
         public ?string $operationRef,
         public ?string $operationId,
-        /** @var string[] | Parameter[] | Reference[] */
+        /** @var Parameter[]|Reference[]|string[] */
         public ?array $parameters,
         public ?RequestBody $requestBody,
         public ?string $description,
