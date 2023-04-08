@@ -15,7 +15,7 @@ final class OAuthFlow extends Data
         public string $authorizationUrl,
         public string $tokenUrl,
         public ?string $refreshUrl,
-        /** @var [string, string][] */
+        /** @var array<array<string, string>> */
         public array $scopes,
     ) {
         //

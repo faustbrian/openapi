@@ -13,7 +13,7 @@ final class Discriminator extends Data
 {
     public function __construct(
         public string $propertyName,
-        /** @var [string, string][] */
+        /** @var array<array<string, string>> */
         public ?array $mapping,
     ) {
         //
