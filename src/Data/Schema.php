@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace BombenProdukt\OpenApi\Data;
 
-use Illuminate\Support\Arr;
 use BombenProdukt\OpenApi\Data\Actions\MapArray;
 use BombenProdukt\OpenApi\Data\Actions\MapFlatArray;
 use BombenProdukt\OpenApi\Data\Actions\MapProperty;
 use BombenProdukt\OpenApi\Reader;
+use Illuminate\Support\Arr;
 use Spatie\LaravelData\Data;
 
 /**
