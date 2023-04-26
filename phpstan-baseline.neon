@@ -1,0 +1,441 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Actions/MapFlatArray.php
+
+		-
+			message: "#^Parameter \\$items of class BombenProdukt\\\\OpenApi\\\\Data\\\\Callback constructor expects array\\<BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Callback.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 10
+			path: src/Data/Components.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$allowReserved of class BombenProdukt\\\\OpenApi\\\\Data\\\\Encoding constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$contentType of class BombenProdukt\\\\OpenApi\\\\Data\\\\Encoding constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$explode of class BombenProdukt\\\\OpenApi\\\\Data\\\\Encoding constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$style of class BombenProdukt\\\\OpenApi\\\\Data\\\\Encoding constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$operationId of class BombenProdukt\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$operationRef of class BombenProdukt\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$requestBody of class BombenProdukt\\\\OpenApi\\\\Data\\\\Link constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\RequestBody\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$server of class BombenProdukt\\\\OpenApi\\\\Data\\\\Link constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Server\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\$schema of class BombenProdukt\\\\OpenApi\\\\Data\\\\MediaType constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Paths\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 4
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\$jsonSchemaDialect of class BombenProdukt\\\\OpenApi\\\\Data\\\\OpenAPI constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\$openapi of class BombenProdukt\\\\OpenApi\\\\Data\\\\OpenAPI constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 5
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$deprecated of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$externalDocs of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\ExternalDocumentation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$operationId of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$requestBody of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\|BombenProdukt\\\\OpenApi\\\\Data\\\\RequestBody\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$summary of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$tags of class BombenProdukt\\\\OpenApi\\\\Data\\\\Operation constructor expects array\\<string\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 8
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$delete of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$get of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$head of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$options of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$patch of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$post of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$put of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$ref of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$summary of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$trace of class BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$items of class BombenProdukt\\\\OpenApi\\\\Data\\\\Paths constructor expects array\\<BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Paths.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$content of class BombenProdukt\\\\OpenApi\\\\Data\\\\RequestBody constructor expects array\\<BombenProdukt\\\\OpenApi\\\\Data\\\\MediaType\\|string\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\RequestBody constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$required of class BombenProdukt\\\\OpenApi\\\\Data\\\\RequestBody constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 3
+			path: src/Data/Response.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\Response constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/Response.php
+
+		-
+			message: "#^Parameter \\$items of class BombenProdukt\\\\OpenApi\\\\Data\\\\Responses constructor expects array\\<BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Response\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Responses.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 7
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$additionalProperties of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Schema, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$deprecated of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$discriminator of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Discriminator\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$enum of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$exclusiveMaximum of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$exclusiveMinimum of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$externalDocs of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\ExternalDocumentation\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$format of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$items of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxItems of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxLength of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxProperties of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maximum of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minItems of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minLength of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minProperties of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minimum of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$multipleOf of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$not of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$nullable of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$pattern of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$readOnly of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$required of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\<string\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$title of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$type of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$uniqueItems of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$writeOnly of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$xml of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Xml\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\$description of class BombenProdukt\\\\OpenApi\\\\Data\\\\Server constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\$url of class BombenProdukt\\\\OpenApi\\\\Data\\\\Server constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of class BombenProdukt\\\\OpenApi\\\\Reader constructor expects array, mixed given\\.$#"
+			count: 3
+			path: src/Reader.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method BombenProdukt\\\\OpenApi\\\\Reader\\:\\:fromJson\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Reader.php
