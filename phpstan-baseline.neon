@@ -271,7 +271,7 @@ parameters:
 			path: src/Data/Schema.php
 
 		-
-			message: "#^Parameter \\$additionalProperties of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects bool\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Schema, mixed given\\.$#"
+			message: "#^Parameter \\$additionalProperties of class BombenProdukt\\\\OpenApi\\\\Data\\\\Schema constructor expects BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Schema\\|bool, mixed given\\.$#"
 			count: 1
 			path: src/Data/Schema.php
 
