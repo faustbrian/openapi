@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/openapi/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/openapi" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/openapi">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/openapi" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/openapi">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/openapi" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/openapi">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/openapi" alt="License" />
-    </a>
-</p>
 
 ## About OpenAPI
 
