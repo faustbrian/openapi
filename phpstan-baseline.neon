@@ -1,9 +1,24 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Data/Actions/MapArray.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Data/Actions/MapFlatArray.php
+
+		-
 			message: "#^Parameter \\#2 \\$property of static method BombenProdukt\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
 			count: 1
 			path: src/Data/Actions/MapFlatArray.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Data/Actions/MapProperty.php
 
 		-
 			message: "#^Parameter \\$items of class BombenProdukt\\\\OpenApi\\\\Data\\\\Callback constructor expects array\\<BombenProdukt\\\\OpenApi\\\\Data\\\\PathItem\\|BombenProdukt\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
