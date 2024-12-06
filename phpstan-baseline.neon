@@ -1,0 +1,706 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) has parameter \\$class with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Actions/MapArray.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) has parameter \\$items with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Actions/MapArray.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Actions/MapArray.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Data/Actions/MapFlatArray.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapFlatArray\\:\\:execute\\(\\) has parameter \\$class with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Actions/MapFlatArray.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Actions/MapFlatArray.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) has parameter \\$property with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Actions/MapProperty.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Callback\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Callback.php
+
+		-
+			message: "#^Parameter \\$items of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Callback constructor expects array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Callback.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Components\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Components.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 10
+			path: src/Data/Components.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Encoding\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$allowReserved of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Encoding constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$contentType of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Encoding constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$explode of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Encoding constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Parameter \\$style of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Encoding constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Encoding.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Link\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$operationId of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$operationRef of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Link constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$requestBody of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Link constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\RequestBody\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Parameter \\$server of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Link constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Server\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Link.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\$schema of class BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/MediaType.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Paths\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 4
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\$jsonSchemaDialect of class BaseCodeOy\\\\OpenApi\\\\Data\\\\OpenAPI constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Parameter \\$openapi of class BaseCodeOy\\\\OpenApi\\\\Data\\\\OpenAPI constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/OpenAPI.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 5
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$deprecated of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$externalDocs of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\ExternalDocumentation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$operationId of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$requestBody of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\RequestBody\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$summary of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Parameter \\$tags of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation constructor expects array\\<string\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Operation.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 8
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$delete of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$get of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$head of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$options of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$patch of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$post of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$put of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$ref of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$summary of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Parameter \\$trace of class BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/PathItem.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Paths\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Paths.php
+
+		-
+			message: "#^Parameter \\$items of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Paths constructor expects array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Paths.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\RequestBody\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$content of class BaseCodeOy\\\\OpenApi\\\\Data\\\\RequestBody constructor expects array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|string\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\RequestBody constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Parameter \\$required of class BaseCodeOy\\\\OpenApi\\\\Data\\\\RequestBody constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/RequestBody.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Response.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 3
+			path: src/Data/Response.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Response constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/Response.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Responses\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Responses.php
+
+		-
+			message: "#^Parameter \\$items of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Responses constructor expects array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\>, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Responses.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\:\\:__construct\\(\\) has parameter \\$enum with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\:\\:__construct\\(\\) has parameter \\$type with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 7
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\#2 \\$property of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapProperty\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 2
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$additionalProperties of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\|bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$deprecated of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$discriminator of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Discriminator\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$enum of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$exclusiveMaximum of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$exclusiveMinimum of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$externalDocs of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\ExternalDocumentation\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$format of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$items of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxItems of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxLength of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maxProperties of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$maximum of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minItems of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minLength of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minProperties of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$minimum of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$multipleOf of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects float\\|int\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$not of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\|null, Spatie\\\\LaravelData\\\\Data\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$nullable of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$pattern of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$readOnly of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$required of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\<string\\>\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$title of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$type of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects array\\|string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$uniqueItems of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$writeOnly of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects bool, mixed given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Parameter \\$xml of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema constructor expects BaseCodeOy\\\\OpenApi\\\\Data\\\\Xml\\|null, array\\|null given\\.$#"
+			count: 1
+			path: src/Data/Schema.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\Server\\:\\:fromReader\\(\\) has parameter \\$data with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\#2 \\$items of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Actions\\\\MapArray\\:\\:execute\\(\\) expects array\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\$description of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Server constructor expects string\\|null, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Parameter \\$url of class BaseCodeOy\\\\OpenApi\\\\Data\\\\Server constructor expects string, mixed given\\.$#"
+			count: 1
+			path: src/Data/Server.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Data\\\\ServerVariable\\:\\:__construct\\(\\) has parameter \\$url with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Data/ServerVariable.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:__construct\\(\\) has parameter \\$contents with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Reader.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:all\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Reader.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of class BaseCodeOy\\\\OpenApi\\\\Reader constructor expects array, mixed given\\.$#"
+			count: 3
+			path: src/Reader.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:fromJson\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: src/Reader.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\OpenApi\\\\Validator\\:\\:errors\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/Validator.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\:\\:\\$content\\.$#"
+			count: 5
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Cannot access property \\$examples on BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\.$#"
+			count: 2
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Cannot access property \\$schema on BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\.$#"
+			count: 1
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Offset 'application/json' does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\>\\|null\\.$#"
+			count: 4
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Offset 'default' does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\Example\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\>\\|null\\.$#"
+			count: 1
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Offset 200 does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\>\\|null\\.$#"
+			count: 6
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Unit/Data/OperationTest.php
+
+		-
+			message: "#^Access to an undefined property BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\:\\:\\$content\\.$#"
+			count: 5
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Cannot access property \\$examples on BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\.$#"
+			count: 2
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Cannot access property \\$responses on BaseCodeOy\\\\OpenApi\\\\Data\\\\Operation\\|null\\.$#"
+			count: 7
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Cannot access property \\$schema on BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\.$#"
+			count: 1
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Offset 'application/json' does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\>\\|null\\.$#"
+			count: 4
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Offset 'default' does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\Example\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\>\\|null\\.$#"
+			count: 1
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Offset 200 does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\>\\|null\\.$#"
+			count: 6
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\PathItem\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Unit/Data/PathItemTest.php
+
+		-
+			message: "#^Cannot access property \\$examples on BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\.$#"
+			count: 2
+			path: tests/Unit/Data/ResponseTest.php
+
+		-
+			message: "#^Cannot access property \\$schema on BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\.$#"
+			count: 1
+			path: tests/Unit/Data/ResponseTest.php
+
+		-
+			message: "#^Offset 'application/json' does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\MediaType\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\>\\|null\\.$#"
+			count: 4
+			path: tests/Unit/Data/ResponseTest.php
+
+		-
+			message: "#^Offset 'default' does not exist on array\\<BaseCodeOy\\\\OpenApi\\\\Data\\\\Example\\|BaseCodeOy\\\\OpenApi\\\\Data\\\\Reference\\|string\\>\\|null\\.$#"
+			count: 1
+			path: tests/Unit/Data/ResponseTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Response\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Unit/Data/ResponseTest.php
+
+		-
+			message: "#^Parameter \\#2 \\$data of static method BaseCodeOy\\\\OpenApi\\\\Data\\\\Schema\\:\\:fromReader\\(\\) expects array, mixed given\\.$#"
+			count: 1
+			path: tests/Unit/Data/SchemaTest.php
+
+		-
+			message: "#^Cannot access property \\$items on BaseCodeOy\\\\OpenApi\\\\Data\\\\Paths\\|null\\.$#"
+			count: 2
+			path: tests/Unit/ParserTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:fromJson\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: tests/Unit/ReaderTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:fromYaml\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: tests/Unit/ReaderTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:fromJson\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: tests/Unit/ValidatorTest.php
+
+		-
+			message: "#^Parameter \\#1 \\$contents of static method BaseCodeOy\\\\OpenApi\\\\Reader\\:\\:fromYaml\\(\\) expects string, string\\|false given\\.$#"
+			count: 1
+			path: tests/Unit/ValidatorTest.php
