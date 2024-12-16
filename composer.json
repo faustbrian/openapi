@@ -31,7 +31,7 @@
     },
     "require-dev": {
         "basecodeoy/standards": "^1.1.1",
-        "laravel/fortify": "^1.25.0"
+        "laravel/fortify": "^1.25.1"
     },
     "autoload": {
         "psr-4": {
